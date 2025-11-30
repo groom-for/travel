@@ -36,6 +36,7 @@ ProductsPage 테스트
 CheckoutFlow 전체 흐름 테스트
 
 🗂 기술 스택
+
 Frontend
 - React
 - React Router
@@ -53,19 +54,21 @@ Deploy
 - 🚧 AWS 배포는 팀원이 진행 예정
 
 🧩 프로젝트 구조
-src/
- ├─ components/
- │   ├─ products/
- │   ├─ cart/
- │   └─ common/
- ├─ contexts/
- ├─ pages/
- ├─ api/
- ├─ styles/
- └─ tests/
+```
+📦 src
+ ┣ 📂 components
+ ┃ ┣ 📂 products
+ ┃ ┣ 📂 cart
+ ┃ ┗ 📂 common
+ ┣ 📂 contexts
+ ┣ 📂 pages
+ ┣ 📂 api
+ ┣ 📂 styles
+ ┗ 📂 tests
+```
 
 💡 팀 작업 분담
-👩‍💻 프론트엔드 (이유리)
+👩‍💻 프론트엔드
 
 전체 페이지 UI 개발
 React 환경 세팅
@@ -75,13 +78,15 @@ Context API 장바구니 로직
 검색 및 필터 기능 완성
 테스트 자동화 (Vitest)
 반응형 디자인
-GitHub 업로드 / 프로젝트 정리
+GitHub 업로드
 
 👨‍💻 팀원 (AWS & Backend 담당)
 AWS S3 + CloudFront 배포
 (선택) Spring Boot REST API 연동
 (선택) 로그인/회원 기능 추가
 배포 문서 / 환경 변수 정리
+프로젝트 정리 
+발표자료 정리 
 
 📝 실행 방법
 npm install
