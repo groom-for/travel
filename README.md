@@ -56,18 +56,64 @@ Deploy
 🧩 프로젝트 구조
 ```
 📦 src
- ┣ 📂 components
- ┃ ┣ 📂 products
- ┃ ┣ 📂 cart
- ┃ ┗ 📂 common
- ┣ 📂 contexts
- ┣ 📂 pages
- ┣ 📂 api
- ┣ 📂 styles
- ┗ 📂 tests
-```
+ ├─ 📂 assets
+ ├─ 📂 api
+ ├─ 📂 components
+ │   ├─ 📂 products
+ │   ├─ 📂 cart
+ │   └─ 📂 common
+ ├─ 📂 contexts
+ ├─ 📂 data
+ ├─ 📂 pages
+ │   └─ 📂 auth
+ ├─ 📂 routes
+ ├─ 📂 styles
+ └─ 📂 tests
 
-💡 팀 작업 분담
+
+```
+---
+프로젝트 구조 (src)
+
+- assets/
+
+- api/
+    - API 호출 관련 로직 (예: fetchProducts 등)
+
+- components/
+    - products/
+        - 상품 리스트, 상품 카드, 필터 패널 관련 컴포넌트
+    - cart/
+        - 장바구니 UI
+    - common/
+        - 공용 UI (예: ContactModal, BackToTop 등)
+
+- contexts/
+    - CartContext 및 기타 전역 상태 관리 로직
+
+- data/
+    - mock 데이터 또는 초기 데이터 보관
+
+- pages/
+    - auth/
+        - LoginPage
+        - SignupPage
+        - SignupCompletePage
+        - PasswordResetCompletePage
+        - AccountPage
+        - ForgotPasswordPage
+
+- routes/
+    - 라우터 설정 파일
+
+- styles/
+    - products.css 및 공통 스타일들
+
+- tests/
+    - 기능 및 UI 테스트 파일들
+
+----
+
 👩‍💻 프론트엔드
 
 전체 페이지 UI 개발
