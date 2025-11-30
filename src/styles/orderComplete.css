@@ -1,0 +1,77 @@
+.order-complete-card {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.order-complete-card h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+}
+
+.order-complete-desc {
+  margin: 0.25rem auto 1rem;
+  color: #475569;
+  max-width: 360px;
+}
+
+.order-complete-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.order-complete-info span {
+  display: block;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.order-complete-info strong {
+  font-size: 1.3rem;
+  color: #0f172a;
+}
+
+.order-complete-summary {
+  margin-top: 1.5rem;
+  background: #fff8ed;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border: 1px solid #ffe0b3;
+}
+
+.order-complete-summary p {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.order-complete-summary ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.order-item-name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.order-item-options {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+  font-weight: 500;
+  color: #b45309;
+}
+
+@media (max-width: 640px) {
+  .order-complete-card {
+    padding: 2rem 1.5rem;
+  }
+}

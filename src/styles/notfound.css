@@ -1,0 +1,22 @@
+.notfound-page {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.notfound-card {
+  margin: 1.5rem auto 0;
+  padding: 2rem;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notfound-message {
+  margin: 0;
+  color: #475569;
+}
+
+.notfound-card .btn {
+  align-self: center;
+}

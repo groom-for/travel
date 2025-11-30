@@ -1,0 +1,17 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sunset)" />
+  <circle cx="620" cy="120" r="60" fill="#f97316" opacity="0.8" />
+  <rect x="140" y="260" width="520" height="200" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="3" />
+  <polygon points="120,260 400,140 680,260" fill="#e2e8f0" stroke="#94a3b8" stroke-width="3" />
+  <rect x="360" y="300" width="80" height="120" fill="#cbd5f5" />
+  <rect x="210" y="320" width="60" height="80" fill="#cbd5f5" />
+  <rect x="530" y="320" width="60" height="80" fill="#cbd5f5" />
+  <path d="M100 460 H700" stroke="#475569" stroke-width="4" stroke-linecap="round" />
+  <text x="50%" y="540" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="32" fill="#1f2937">Gyeongju Heritage Tour</text>
+</svg>
