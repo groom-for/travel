@@ -32,7 +32,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      # ✅ S3로 배포
-      - name: Deploy to S3
+      # ✅ AWS CLI 설치 (확실하게)
+      - name: Install AWS CLI
         run: |
-          aws s3 sync dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
+          sudo apt-get update
+          sudo apt-get install -y awscli
+
+      # ✅ S3로 배포 (env로 버킷명 바인딩)
+      - name: Deploy to S3
+        env:
+          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+        run: |
+          aws s3 sync dist s3://$S3_BUCKET_NAME --delete
