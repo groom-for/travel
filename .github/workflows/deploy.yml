@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      # ✅ AWS 자격증명 설정 (공식 액션)
+      # ✅ AWS 자격증명 설정 (이 단계가 AWS CLI도 준비해줌)
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -32,13 +32,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      # ✅ AWS CLI 설치 (확실하게)
-      - name: Install AWS CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y awscli
-
-      # ✅ S3로 배포 (env로 버킷명 바인딩)
+      # ✅ S3로 배포 (가장 안정적인 방식)
       - name: Deploy to S3
         env:
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
